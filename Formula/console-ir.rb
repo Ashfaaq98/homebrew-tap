@@ -11,7 +11,7 @@ class ConsoleIr < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Ashfaaq98/ocsf-console-ir/releases/download/v0.1.0/console-ir_0.1.0_macOS_amd64.tar.gz"
-      sha256 "5c81823b5af6e6ad2097cc01f673cae192963fb7cb49a2d1918b5c8b6773772e"
+      sha256 "9d4817322b57bdff90e2af846bd622209a15f51cdaa0bfd9b2b3e5e19eedd96d"
 
       define_method(:install) do
         bin.install "console-ir"
@@ -19,7 +19,7 @@ class ConsoleIr < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Ashfaaq98/ocsf-console-ir/releases/download/v0.1.0/console-ir_0.1.0_macOS_arm64.tar.gz"
-      sha256 "062a1aadd44c9388201fb12dfdedde36ffa9e7e5cfb282d87f138c89a708cb3f"
+      sha256 "2328a082fcac347dd0058abcf9cdeade4453f197ba4aff5571e1f95a9cb162c7"
 
       define_method(:install) do
         bin.install "console-ir"
@@ -30,14 +30,14 @@ class ConsoleIr < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Ashfaaq98/ocsf-console-ir/releases/download/v0.1.0/console-ir_0.1.0_Linux_amd64.tar.gz"
-      sha256 "afdb1862c01d560d7808c0cff128a37f11a33c4a6cc59f484c102afd5977459d"
+      sha256 "cb10667d179e21bfe51f26612a9c18936d9dd639596facd9376f20d8e63f8828"
       define_method(:install) do
         bin.install "console-ir"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Ashfaaq98/ocsf-console-ir/releases/download/v0.1.0/console-ir_0.1.0_Linux_arm64.tar.gz"
-      sha256 "b1eb78240587e67405d0a40522500033c5b3ee59fcd1c774b19a854368bf7373"
+      sha256 "65d8f2f0ccf6d6e958e9d6ab92637a51998feb31f39720ee4b5a48e2df99a141"
       define_method(:install) do
         bin.install "console-ir"
       end
