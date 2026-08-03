@@ -5,21 +5,21 @@
 class ConsoleIr < Formula
   desc "Terminal-first OCSF-native incident response manager for security analysts"
   homepage "https://github.com/Ashfaaq98/ocsf-console-ir"
-  version "0.1.0"
+  version "0.2.0"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Ashfaaq98/ocsf-console-ir/releases/download/v0.1.0/console-ir_0.1.0_macOS_amd64.tar.gz"
-      sha256 "9d4817322b57bdff90e2af846bd622209a15f51cdaa0bfd9b2b3e5e19eedd96d"
+      url "https://github.com/Ashfaaq98/ocsf-console-ir/releases/download/v0.2.0/console-ir_0.2.0_macOS_amd64.tar.gz"
+      sha256 "36f2bbcf849b3d9b3549ad1051df04f478a23b3e43dd807118dc41f2bdef9d82"
 
       define_method(:install) do
         bin.install "console-ir"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Ashfaaq98/ocsf-console-ir/releases/download/v0.1.0/console-ir_0.1.0_macOS_arm64.tar.gz"
-      sha256 "2328a082fcac347dd0058abcf9cdeade4453f197ba4aff5571e1f95a9cb162c7"
+      url "https://github.com/Ashfaaq98/ocsf-console-ir/releases/download/v0.2.0/console-ir_0.2.0_macOS_arm64.tar.gz"
+      sha256 "07dbaddbbb5ac26149fe56ce0e2d1758dd1c3b1e4d19aa4f20afd3a55c60a7e4"
 
       define_method(:install) do
         bin.install "console-ir"
@@ -29,15 +29,15 @@ class ConsoleIr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ashfaaq98/ocsf-console-ir/releases/download/v0.1.0/console-ir_0.1.0_Linux_amd64.tar.gz"
-      sha256 "cb10667d179e21bfe51f26612a9c18936d9dd639596facd9376f20d8e63f8828"
+      url "https://github.com/Ashfaaq98/ocsf-console-ir/releases/download/v0.2.0/console-ir_0.2.0_Linux_amd64.tar.gz"
+      sha256 "e00307ff436e79411ef6fe1b9738f6d5bc7f4fab2a3587bd657939b4ba88c255"
       define_method(:install) do
         bin.install "console-ir"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ashfaaq98/ocsf-console-ir/releases/download/v0.1.0/console-ir_0.1.0_Linux_arm64.tar.gz"
-      sha256 "65d8f2f0ccf6d6e958e9d6ab92637a51998feb31f39720ee4b5a48e2df99a141"
+      url "https://github.com/Ashfaaq98/ocsf-console-ir/releases/download/v0.2.0/console-ir_0.2.0_Linux_arm64.tar.gz"
+      sha256 "b546eed0ebe96cf03ae26c0d6c7c6d520f13c057b5f2886f0a707d48e9c8ad35"
       define_method(:install) do
         bin.install "console-ir"
       end
